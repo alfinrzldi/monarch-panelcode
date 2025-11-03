@@ -457,7 +457,7 @@ const offences = {
 };
 
 // Simpan status checkbox tiap kategori
-let checkedState = { A: [], B: [], C: [], D: [], E: [], F: [],};
+let checkedState = { A: [], B: [], C: [], D: [], E: [], F: []};
 
 function initOffences() {
   const container = document.getElementById("offence-list");
