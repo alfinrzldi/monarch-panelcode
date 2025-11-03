@@ -5,7 +5,7 @@ const offenceHeadlines = {
   D: "Pasal D - Narkotika",
   E: "Pasal E - Senjata dan barang terlarang",
   F: "Pasal F - Kejahatan & terorisme",
-  G: "Pasal G - Kejahatan Seksual",
+  // G: "Pasal G - Kejahatan Seksual",
 };
 
 const offences = {
@@ -434,30 +434,30 @@ const offences = {
     },
   ],
 
-  G: [
-    {
-      name: "G01 - Pelecehan Seksual",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "G02 - Pemerkosaan",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "G03 - Eksploitasi Seksual",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-  ],
+  // G: [
+  //   {
+  //     name: "G01 - Pelecehan Seksual",
+  //     fine: 15000,
+  //     time: 120,
+  //     impound: 0,
+  //   },
+  //   {
+  //     name: "G02 - Pemerkosaan",
+  //     fine: 15000,
+  //     time: 120,
+  //     impound: 0,
+  //   },
+  //   {
+  //     name: "G03 - Eksploitasi Seksual",
+  //     fine: 15000,
+  //     time: 120,
+  //     impound: 0,
+  //   },
+  // ],
 };
 
 // Simpan status checkbox tiap kategori
-let checkedState = { A: [], B: [], C: [], D: [], E: [], F: [], G: [] };
+let checkedState = { A: [], B: [], C: [], D: [], E: [], F: [],};
 
 function initOffences() {
   const container = document.getElementById("offence-list");
