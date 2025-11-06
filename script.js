@@ -129,7 +129,7 @@ const offences = {
       impound: 0,
     },
     { name: "B08 - Gangguan Ketertiban Umum", fine: 2000, time: 10, impound: 0 },
-    { name: "B09 - Pencurian", fine: 4000, time: 25, impound: 0 },
+    { name: "B09 - Pencurian", fine: 4000, time: 26, impound: 0 },
     { name: "B10 - Vandalisme", fine: 3000, time: 15, impound: 0 },
     // { name: "B05 - Mabuk di Tempat Umum", fine: 700, time: 3, impound: 0 },
     {
