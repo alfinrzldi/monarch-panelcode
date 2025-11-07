@@ -12,89 +12,77 @@ const offences = {
   A: [
     // Sekarang A = Lalu Lintas (dulunya B)
     {
-      name: "A01 - Berkendara tidak memiliki SIM ",
-      fine: 2000,
-      time: 0,
-      impound: 0,
-    },
-    {
-      name: "A02 - Berkendara Secara Ugal - Ugalan",
-      fine: 2000,
-      time: 0,
-      impound: 0,
-    },
-    {
-      name: "A03 - Parkir Sembarangan",
-      fine: 3000,
-      time: 0,
-      impound: 2,
-    },
-    {
-      name: "A04 - Kendaraan tidak memiliki plat nomor",
-      fine: 2000,
-      time: 0,
-      impound: 2,
-    },
-    {
-      name: "A05 - Kabur dari Kecelakaan",
-      fine: 3000,
+      name: "A01 - Berkendara tidak memiliki SIM",
+      fine: 1300,
       time: 0,
       impound: 1,
     },
     {
+      name: "A02 - Berkendara Secara Ugal - Ugalan",
+      fine: 1500,
+      time: 0,
+      impound: 1,
+    },
+    {
+      name: "A03 - Parkir Sembarangan",
+      fine: 1250,
+      time: 0,
+      impound: 1,
+    },
+    {
+      name: "A04 - Kendaraan tidak memiliki plat nomor",
+      fine: 1300,
+      time: 0,
+      impound: 1,
+    },
+    {
+      name: "A05 - Kabur dari Kecelakaan",
+      fine: 2000,
+      time: 5,
+      impound: 1,
+    },
+    {
       name: "A06 - Kecelakaan hingga menimbulkan korban jiwa",
-      fine: 4000,
+      fine: 2500,
       time: 10,
       impound: 2,
     },
-    { name: "A07 - Mengemudi Melawan Arus", fine: 2000, time: 0, impound: 0 },
+    { name: "A07 - Mengemudi Melawan Arus", fine: 1200, time: 0, impound: 0 },
     {
       name: "A08 - Mengangkut Penumpang Lebih dari Kapasitas",
-      fine: 3000,
+      fine: 1100,
       time: 0,
       impound: 0,
     },
     {
       name: "A09 - Menghindar saat diberhentikan petugas",
-      fine: 2000,
-      time: 0,
-      impound: 2,
+      fine: 2700,
+      time: 10,
+      impound: 1,
     },
     {
       name: "A10 - Menabrak Rambu Lalu Lintas",
-      fine: 1500,
+      fine: 1000,
       time: 0,
       impound: 0,
     },
     {
       name: "A11 - Modifikasi Ilegal (Nitro & Knalpot Api)",
-      fine: 2000,
-      time: 0,
-      impound: 2,
-    },
-    {
-      name: "A12 - Pengejaran Terhadap Petugas",
-      fine: 5000,
-      time: 15,
-      impound: 4,
-    },
-    {
-      name: "A13 - Balap Liar",
-      fine: 4000,
-      time: 15,
-      impound: 2,
-    },
-    {
-      name: "A14 - Menerobos barikade kepolisian",
-      fine: 2000,
+      fine: 1500,
       time: 0,
       impound: 1,
     },
     {
-      name: "A15 - Mengikuti kendaraan darurat tanpa alasan",
-      fine: 2500,
+      name: "A12 - Balap Liar",
+      fine: 3000,
+      time: 15,
+      impound: 2,
+    },
+    {
+      name: "A13 - Menerobos barikade kepolisian",
+      fine: 1000,
       time: 0,
-      impound: 0,
+      impound: 1,
     },
     // dst sesuai list B
   ],
@@ -105,97 +93,97 @@ const offences = {
     { name: "B02 - Meludah Sembarangan", fine: 1000, time: 5, impound: 0 },
     {
       name: "B03 - Buang air kecil atau besar sembarangan",
-      fine: 2000,
+      fine: 1200,
       time: 5,
       impound: 0,
     },
     {
       name: "B04 - Mengganggu / menipu petugas saat bertugas",
-      fine: 2500,
-      time: 5,
+      fine: 1500,
+      time: 8,
       impound: 0,
     },
     {
       name: "B05 - Menyebarkan ujaran buruk individu / kelompok",
-      fine: 3000,
-      time: 20,
+      fine: 2200,
+      time: 12,
       impound: 0,
     },
-    { name: "B06 - Berkelahi ditempat umum", fine: 2500, time: 10, impound: 0 },
-    {
-      name: "B07 - Memakai masker (/mask)",
-      fine: 3000,
-      time: 15,
-      impound: 0,
-    },
-    { name: "B08 - Gangguan Ketertiban Umum", fine: 2000, time: 10, impound: 0 },
-    { name: "B09 - Pencurian", fine: 4000, time: 26, impound: 0 },
-    { name: "B10 - Vandalisme", fine: 3000, time: 15, impound: 0 },
+    { name: "B06 - Berkelahi ditempat umum", fine: 2500, time: 15, impound: 0 },
+    // {
+    //   name: "B07 - Memakai masker (/mask)",
+    //   fine: 3000,
+    //   time: 15,
+    //   impound: 0,
+    // },
+    { name: "B07 - Gangguan Ketertiban Umum", fine: 2000, time: 10, impound: 1 },
+    { name: "B08 - Pencurian", fine: 2800, time: 18, impound: 1 },
+    { name: "B09 - Vandalisme", fine: 2400, time: 13, impound: 0 },
     // { name: "B05 - Mabuk di Tempat Umum", fine: 700, time: 3, impound: 0 },
     {
-      name: "B11 - Menggunakan atribut milik instansi secara ilegal",
-      fine: 2500,
+      name: "B10 - Menggunakan atribut milik instansi secara ilegal",
+      fine: 2100,
       time: 8,
       impound: 0,
     },
     {
-      name: "B12 - Menyamar sebagai petugas instansi untuk keuntungan pribadi",
-      fine: 4000,
-      time: 20,
-      impound: 0,
-    },
-    {
-      name: "B13 - Percobaan suap terhadap petugas",
-      fine: 3000,
+      name: "B11 - Menyamar sebagai petugas instansi untuk keuntungan pribadi",
+      fine: 2200,
       time: 10,
       impound: 0,
     },
     {
-      name: "B14 - Memberikan laporan/informasi palsu kepada petugas",
-      fine: 2500,
-      time: 8,
-      impound: 0,
-    },
-    {
-      name: "B15 - Memiliki hewan yang dilindungi (hiu & penyu)",
-      fine: 2500,
-      time: 7,
-      impound: 0,
-    },
-    {
-      name: "B16 - Memperjualbelikan hewan yang dilindungi",
-      fine: 3500,
+      name: "B12 - Percobaan suap terhadap petugas",
+      fine: 2300,
       time: 12,
       impound: 0,
     },
     {
-      name: "B17 - Mengumpulkan massa untuk menciptakan kekacauan",
+      name: "B13 - Memberikan laporan/informasi palsu kepada petugas",
+      fine: 2250,
+      time: 12,
+      impound: 0,
+    },
+    {
+      name: "B14 - Memiliki hewan yang dilindungi (hiu & penyu)",
+      fine: 3000,
+      time: 13,
+      impound: 0,
+    },
+    {
+      name: "B15 - Memperjualbelikan hewan yang dilindungi",
+      fine: 3300,
+      time: 15,
+      impound: 0,
+    },
+    {
+      name: "B16 - Mengumpulkan massa untuk menciptakan kekacauan",
       fine: 5000,
       time: 25,
       impound: 0,
     },
     {
-      name: "B18 - Ikut dalam kerusuhan yang menyebabkan kerugian",
-      fine: 3000,
+      name: "B17 - Ikut dalam kerusuhan yang menyebabkan kerugian",
+      fine: 4000,
       time: 20,
       impound: 0,
     },
     {
-      name: "B19 - Menolak membubarkan diri",
+      name: "B18 - Menolak membubarkan diri",
       fine: 2500,
       time: 8,
       impound: 0,
     },
     {
-      name: "B20 - Melakukan penghakiman secara sepihak",
-      fine: 3500,
+      name: "B19 - Melakukan penghakiman secara sepihak",
+      fine: 4000,
       time: 20,
       impound: 0,
     },
     {
-      name: "B21 - Melakukan aktivitas pemburuan tanpa lisensi pemburu",
-      fine: 3000,
-      time: 5,
+      name: "B20 - Melakukan aktivitas pemburuan tanpa lisensi pemburu",
+      fine: 5000,
+      time: 15,
       impound: 0,
     },
   ],
@@ -203,38 +191,38 @@ const offences = {
   C: [
     {
       name: "C01 - Memasuki properti pribadi tanpa izin",
-      fine: 2500,
-      time: 20,
+      fine: 3500,
+      time: 10,
       impound: 0,
     },
     {
       name: "C02 - Memasuki properti milik pemerintah tanpa izin",
-      fine: 2500,
-      time: 20,
+      fine: 4000,
+      time: 11,
       impound: 0,
     },
     {
       name: "C03 - Merusak properti pribadi atau milik pemerintah",
-      fine: 2500,
-      time: 25,
+      fine: 4500,
+      time: 15,
       impound: 0,
     },
     {
       name: "C04 - Membakar properti",
-      fine: 6000,
-      time: 30,
+      fine: 5000,
+      time: 25,
       impound: 0,
     },
     {
       name: "C05 - Menjadikan properti sebagai tempat distribusi barang ilegal",
-      fine: 8000,
+      fine: 6500,
       time: 30,
       impound: 0,
     },
     {
       name: "C06 - Membobol properti dengan niat mencuri",
-      fine: 7000,
-      time: 30,
+      fine: 6000,
+      time: 23,
       impound: 0,
     },
   ],
@@ -248,67 +236,67 @@ const offences = {
     },
     {
       name: "D02 - Terlibat dalam pembuatan narkotika",
-      fine: 5000,
-      time: 25,
+      fine: 4000,
+      time: 20,
       impound: 0,
     },
     {
       name: "D03 - Menjual atau mendistribusikan narkotika",
-      fine: 15000,
-      time: 60,
+      fine: 7000,
+      time: 30,
       impound: 0,
     },
     {
       name: "D04-1 - Membawa Kanabis [1-10 pcs]",
-      fine: 4000,
-      time: 10,
+      fine: 3000,
+      time: 15,
       impound: 0,
     },
     {
       name: "D04-2 - Membawa Kanabis [11-25 pcs]",
-      fine: 7000,
-      time: 15,
+      fine: 4000,
+      time: 16,
       impound: 0,
     },
     {
       name: "D04-3 - Membawa Kanabis [ >25 pcs]",
-      fine: 14000,
-      time: 20,
-      impound: 0,
-    },
-    {
-      name: "D05-1 - Membawa Marijuana [1-10 pcs]",
       fine: 5000,
-      time: 10,
-      impound: 0,
-    },
-    {
-      name: "D05-2 - Membawa Marijuana [11-25 pcs]",
-      fine: 8000,
-      time: 15,
-      impound: 0,
-    },
-    {
-      name: "D05-3 - Membawa Marijuana [ >25 pcs]",
-      fine: 15000,
       time: 20,
       impound: 0,
     },
+    // {
+    //   name: "D05-1 - Membawa Marijuana [1-10 pcs]",
+    //   fine: 5000,
+    //   time: 10,
+    //   impound: 0,
+    // },
+    // {
+    //   name: "D05-2 - Membawa Marijuana [11-25 pcs]",
+    //   fine: 8000,
+    //   time: 15,
+    //   impound: 0,
+    // },
+    // {
+    //   name: "D05-3 - Membawa Marijuana [ >25 pcs]",
+    //   fine: 15000,
+    //   time: 20,
+    //   impound: 0,
+    // },
     {
-      name: "D06-1 - Membawa Joint []",
-      fine: 7000,
-      time: 15,
-      impound: 0,
-    },
-    {
-      name: "D06-2 - Membawa Joint []",
-      fine: 10000,
+      name: "D05-1 - Membawa Joint [ 1-5 pcs ]",
+      fine: 6000,
       time: 25,
       impound: 0,
     },
     {
-      name: "D06-3 - Membawa Joint []",
-      fine: 17000,
+      name: "D05-2 - Membawa Joint [ 6-10 pcs ]",
+      fine: 7000,
+      time: 30,
+      impound: 0,
+    },
+    {
+      name: "D05-3 - Membawa Joint [ >10 ]",
+      fine: 8000,
       time: 35,
       impound: 0,
     },
@@ -317,61 +305,73 @@ const offences = {
   E: [
     {
       name: "E01 - Menyalahgunakan senjata tajam / tumpul",
+      fine: 3000,
+      time: 10,
+      impound: 0,
+    },
+    {
+      name: "E02-1 - Kepemilikan senjata api ilegal (FIRST CLASS)",
+      fine: 5000,
+      time: 12,
+      impound: 0,
+    },
+    {
+      name: "E02-2 - Kepemilikan senjata api ilegal (SECOND CLASS)",
       fine: 6000,
-      time: 25,
+      time: 15,
       impound: 0,
     },
     {
-      name: "E02 - Kepemilikan senjata api ilegal",
-      fine: 8000,
-      time: 25,
-      impound: 0,
-    },
-    {
-      name: "E03 - Kepemilikan kevlar",
-      fine: 8000,
-      time: 25,
-      impound: 0,
-    },
-    {
-      name: "E03 - Kepemilikan Uranium",
-      fine: 15000,
+      name: "E02-3 - Kepemilikan senjata api ilegal (THIRD CLASS)",
+      fine: 0,
       time: 120,
       impound: 0,
     },
     {
-      name: "E04 - Menjual senjata api ilegal",
-      fine: 10000,
+      name: "E03 - Kepemilikan kevlar",
+      fine: 5000,
+      time: 10,
+      impound: 0,
+    },
+    {
+      name: "E03 - Kepemilikan Uranium",
+      fine: 5000,
+      time: 15,
+      impound: 0,
+    },
+    {
+      name: "E04 - Menjual/Membeli senjata api ilegal",
+      fine: 8000,
+      time: 20,
+      impound: 0,
+    },
+    // {
+    //   name: "E05 - Membeli senjata api ilegal",
+    //   fine: 8000,
+    //   time: 25,
+    //   impound: 0,
+    // },
+    {
+      name: "E05 - Merakit senjata api ilegal",
+      fine: 8500,
       time: 30,
       impound: 0,
     },
     {
-      name: "E05 - Membeli senjata api ilegal",
-      fine: 8000,
-      time: 25,
+      name: "E06 - Penodongan senjata ke suatu individu / kelompok",
+      fine: 4500,
+      time: 16,
       impound: 0,
     },
     {
-      name: "E06 - Merakit senjata api ilegal",
-      fine: 15000,
-      time: 40,
+      name: "E07 - Penembakan senjata ke suatu individu / kelompok",
+      fine: 5500,
+      time: 20,
       impound: 0,
     },
     {
-      name: "E07 - Penodongan senjata ke suatu individu / kelompok",
-      fine: 8000,
-      time: 35,
-      impound: 0,
-    },
-    {
-      name: "E08 - Penembakan senjata ke suatu individu / kelompok",
-      fine: 13000,
-      time: 45,
-      impound: 0,
-    },
-    {
-      name: "E09 - Penyelundupan senjata",
-      fine: 10000,
+      name: "E08 - Penyelundupan senjata",
+      fine: 9000,
       time: 25,
       impound: 0,
     },
@@ -380,60 +380,54 @@ const offences = {
   F: [
     {
       name: "F01 - Pembegalan",
-      fine: 15000,
-      time: 120,
-      impound: 0,
+      fine: 4000,
+      time: 15,
+      impound: 2,
     },
     {
       name: "F02 - Perampokan Warung",
-      fine: 15000,
-      time: 120,
-      impound: 0,
+      fine: 5000,
+      time: 17,
+      impound: 2,
     },
     {
       name: "F03 - Pencurian Mobil (Car Stealing)",
-      fine: 15000,
-      time: 120,
+      fine: 2000,
+      time: 12,
       impound: 0,
     },
     {
       name: "F04 - Penyerangan kepada instansi yang sedang bertugas",
+      fine: 2500,
+      time: 10,
+      impound: 0,
+    },
+    {
+      name: "F05 - Melakukan penyanderaan terhadap warga/instansi",
+      fine: 3000,
+      time: 15,
+      impound: 0,
+    },
+    // {
+    //   name: "F06 - Perdagangan manusia",
+    //   fine: 15000,
+    //   time: 120,
+    //   impound: 0,
+    // },
+    {
+      name: "F06 - Peperangan bersenjata antar kelompok",
+      fine: 8000,
+      time: 25,
+      impound: 0,
+    },
+    {
+      name: "F07 - Terorisme",
       fine: 15000,
       time: 120,
       impound: 0,
     },
     {
-      name: "F05 - Penculikan",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "F06 - Perdagangan manusia",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "F07 - Melakukan penyanderaan terhadap warga/instansi",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "F08 - Peperangan bersenjata antar kelompok",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "F09 - Terorisme",
-      fine: 15000,
-      time: 120,
-      impound: 0,
-    },
-    {
-      name: "F10 - Penyanderaan Massal",
+      name: "F08 - Penyanderaan Massal",
       fine: 15000,
       time: 120,
       impound: 0,
@@ -470,11 +464,9 @@ function initOffences() {
   container.innerHTML = "";
 
   Object.keys(offences).forEach((cat) => {
-    // buat wrapper kategori
     const wrapper = document.createElement("div");
     wrapper.className = "offence-block";
 
-    // === header yang diklik ===
     const header = document.createElement("div");
     header.className = "offence-header";
     header.innerHTML = `
@@ -482,31 +474,47 @@ function initOffences() {
       <span class="arrow">▼</span>
     `;
 
-    // === konten isi pasal ===
     const content = document.createElement("div");
     content.className = "offence-content";
 
     offences[cat].forEach((o, index) => {
       const div = document.createElement("div");
       div.className = "offence";
-      div.innerHTML = `
-        <label>
-          <input type="checkbox"
-            data-category="${cat}"
-            data-index="${index}"
-            data-fine="${o.fine}"
-            data-time="${o.time}"
-            data-impound="${o.impound}"
-            onchange="updateState(this)">
-          ${o.name}
-        </label>
-        <span>Denda: $${o.fine}, Penjara: ${o.time} bulan, Impound: ${o.impound} hari</span>
-      `;
-      if (checkedState[cat][index]) div.querySelector("input").checked = true;
+
+      // 🧩 Deteksi pasal E02-3, F07, F08 untuk persidangan
+      const isCourtCase =
+        o.name.startsWith("E02-3") ||
+        o.name.startsWith("F07") ||
+        o.name.startsWith("F08");
+
+      if (isCourtCase) {
+        // tampil tanpa checkbox dan tanpa info denda
+        div.innerHTML = `
+          <label style="color: #f51800f5; font-weight: 800;">
+            ${o.name} <span style="color:#f51800f5;">(Potensi Persidangan)</span>
+          </label>
+        `;
+      } else {
+        // normal case (dengan checkbox dan info)
+        div.innerHTML = `
+          <label>
+            <input type="checkbox"
+              data-category="${cat}"
+              data-index="${index}"
+              data-fine="${o.fine}"
+              data-time="${o.time}"
+              data-impound="${o.impound}"
+              onchange="updateState(this)">
+            ${o.name}
+          </label>
+          <span>Denda: $${o.fine}, Penjara: ${o.time} bulan, Impound: ${o.impound} hari</span>
+        `;
+      }
+
       content.appendChild(div);
     });
 
-    // === event klik header buka/tutup ===
+    // 🧩 event buka tutup kategori
     header.addEventListener("click", () => {
       const active = content.classList.toggle("active");
       header.querySelector(".arrow").style.transform = active
@@ -519,6 +527,9 @@ function initOffences() {
     container.appendChild(wrapper);
   });
 }
+
+
+
 
 header.addEventListener("click", () => {
   const active = content.classList.contains("active");
